@@ -1,12 +1,10 @@
 
 package bai09;
-
-import bai08.*;
-
 public class Triangle extends Shape {
     public int base;
     public int height;
-    public Triangle(int base, int height){
+    public Triangle(int base, int height, String color){
+        super(color);
         this.base = base;
         this.height = height;
     }
@@ -29,6 +27,6 @@ public class Triangle extends Shape {
     }
     @Override
     public String toString(){
-        return "Dien tich tam giac la: "+getArea();
+        return super.toString()+"\nDien tich tam giac la: "+getArea();
     }
 }

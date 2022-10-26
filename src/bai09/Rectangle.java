@@ -1,11 +1,10 @@
 package bai09;
 
-import bai08.*;
-
 public class Rectangle extends Shape{
     public int length;
     public int width;
-    public Rectangle(int length, int width){
+    public Rectangle(int length, int width,String color){
+        super(color);
         this.length = length;
         this.width = width;
     }
@@ -28,6 +27,6 @@ public class Rectangle extends Shape{
     }
     @Override
     public String toString(){
-        return "Dien tich hinh chu nhat la: "+getArea();
+        return super.toString()+"\nDien tich hinh chu nhat la: "+getArea();
     }
 }
