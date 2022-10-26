@@ -1,10 +1,9 @@
 package bai01;
-
 public class Person {
     public String name;
     public String dob;
     public String pob;
-    public char gender;
+    public char gender; //giởi tính nam là M, nữ là N
     public String email;
     public String phone;
 
@@ -12,7 +11,7 @@ public class Person {
         this.name = "";
         this.dob = "";
         this.pob = "";
-        this.gender = (char)32;
+        this.gender = 'M';
         this.email = "";
         this.phone = "";
     }
@@ -25,51 +24,41 @@ public class Person {
         this.email = email;
         this.phone = phone;
     }
-
+//setter
     public void setName(String name) {
         this.name = name;
     }
-
     public void setDob(String dob) {
         this.dob = dob;
     }
-
     public void setPob(String pob) {
         this.pob = pob;
     }
-
     public void setGender(char gender) {
         this.gender = gender;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
-
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
+//getter
     public String getName(String name) {
         return name;
     }
-
     public String getDob(String dob) {
         return dob;
     }
-
     public String getPob(String pob) {
         return pob;
     }
-
     public char getGender(char gender) {
         return gender;
     }
-
     public String getEmail(String email) {
         return email;
     }
-
     public String getPhone(String phone) {
         return phone;
     }

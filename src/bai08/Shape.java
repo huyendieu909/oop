@@ -1,6 +1,4 @@
-
 package bai08;
-
 public abstract class Shape {
     public String color;
     public Shape(){
