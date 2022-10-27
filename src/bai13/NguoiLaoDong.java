@@ -1,5 +1,4 @@
 package bai13;
-
 public abstract class NguoiLaoDong {
     public String hoten;
     public String diachi;
