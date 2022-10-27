@@ -15,7 +15,7 @@ public abstract class GiangVien {
         this.loaigv = loaigv;
     }
     public abstract double tinhLuong();
-    public String inThongTin(){//String hoten,String diachi,int loaigv){
+    public String inThongTin(){
         String loaigiangvien;
         if (loaigv == 1) loaigiangvien = "Giang vien co huu";
         else loaigiangvien = "Giang vien thinh giang";
