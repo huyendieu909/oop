@@ -24,13 +24,13 @@ public class Truong {
     public void setHieuTruong(String hieuTruong){
         this.hieuTruong = hieuTruong;
     }
-    public String getTen(String ten){
+    public String getTen(){
         return ten;
     }
-    public String getDiaChi(String diaChi){
+    public String getDiaChi(){
         return diaChi;
     }
-    public String getHieuTruong(String hieuTruong){
+    public String getHieuTruong(){
         return hieuTruong;
     }
     @Override

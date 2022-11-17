@@ -2,9 +2,9 @@
 package bai05;
 
 public class SinhVien extends Nguoi{
-    public String lop;
-    public String nganh;
-    public Truong truong;
+    private String lop;
+    private String nganh;
+    private Truong truong;
     public SinhVien(){
         
     }
@@ -23,7 +23,7 @@ public class SinhVien extends Nguoi{
     }
 
     public void setTruong(Truong truong) {
-        this.gioiTinh = gioiTinh;
+        this.truong = truong;
     }
 
     public String getLop(String lop) {

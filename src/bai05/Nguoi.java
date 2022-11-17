@@ -3,17 +3,17 @@ package bai05;
 import bai04.*;
 
 public class Nguoi {
-    public String ten;
-    public int tuoi;
-    public char gioiTinh;
+    private String ten;
+    private int tuoi;
+    private int gioiTinh;
 
     public Nguoi() {
         this.ten = "";
-        this.gioiTinh = (char)32;
+        this.gioiTinh = 0;
         this.tuoi = 0;
     }
 
-    public Nguoi(String ten, int tuoi, char gioiTinh) {
+    public Nguoi(String ten, int tuoi, int gioiTinh) {
         this.ten = ten;
         this.tuoi = tuoi;
         this.gioiTinh = gioiTinh;
@@ -27,23 +27,26 @@ public class Nguoi {
         this.tuoi = tuoi;
     }
 
-    public void setGioiTinh(char gioiTinh) {
+    public void setGioiTinh(int gioiTinh) {
         this.gioiTinh = gioiTinh;
     }
 
-    public String getTen(String ten) {
+    public String getTen() {
         return ten;
     }
 
-    public int getTuoi(int tuoi) {
+    public int getTuoi() {
         return tuoi;
     }
 
-    public char getGioiTinh(char gioiTinh) {
+    public int getGioiTinh() {
         return gioiTinh;
     }
     @Override
     public String toString() {
-        return "Ten: \t" + this.ten + "\nTuoi: \t" + this.tuoi + "\nGioi tinh: \t" + this.gioiTinh;
+        String gt;
+        if (gioiTinh == 1) gt = "nam";
+        else gt = "nu";
+        return "Ten: \t" + this.ten + "\nTuoi: \t" + this.tuoi + "\nGioi tinh: \t" + gt;
     }
 }
