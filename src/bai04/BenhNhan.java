@@ -1,10 +1,13 @@
 package bai04;
 public class BenhNhan extends Nguoi {
-    public String tienSu;
-    public String chanDoan;
-    public BenhVien benhVien;
+    private String tienSu;
+    private String chanDoan;
+    private BenhVien benhVien;
 
-    public BenhNhan(String ten, int tuoi, char gioiTinh, String tienSu, String chanDoan, BenhVien benhVien) {
+    public BenhNhan(){
+        
+    }
+    public BenhNhan(String ten, int tuoi, int gioiTinh, String tienSu, String chanDoan, BenhVien benhVien) {
         super(ten, tuoi, gioiTinh);
         this.tienSu = tienSu;
         this.chanDoan = chanDoan;
@@ -23,15 +26,15 @@ public class BenhNhan extends Nguoi {
         this.benhVien = benhVien;
     }
 
-    public String getTienSu(String ten) {
+    public String getTienSu() {
         return this.tienSu;
     }
 
-    public String getChanDoan(String chanDoan) {
+    public String getChanDoan() {
         return chanDoan;
     }
 
-    public BenhVien getBenhVien(BenhVien benhVien) {
+    public BenhVien getBenhVien() {
         return benhVien;
     }
 

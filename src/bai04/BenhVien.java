@@ -1,10 +1,13 @@
 package bai04;
 
 public class BenhVien {
-    public String ten;
-    public String diaChi;
-    public String giamDoc;
+    private String ten;
+    private String diaChi;
+    private String giamDoc;
 
+    public BenhVien(){
+        
+    }
     public BenhVien(String ten, String diaChi, String giamDoc) {
         this.ten = ten;
         this.diaChi = diaChi;
@@ -23,15 +26,15 @@ public class BenhVien {
         this.giamDoc = giamDoc;
     }
 
-    public String getTen(String ten) {
+    public String getTen() {
         return ten;
     }
 
-    public int getDiaChi(int diaChi) {
+    public String getDiaChi() {
         return diaChi;
     }
 
-    public String getGiamDoc(String giamDoc) {
+    public String getGiamDoc() {
         return giamDoc;
     }
     @Override
