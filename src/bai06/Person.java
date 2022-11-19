@@ -2,14 +2,14 @@ package bai06;
 
 
 public class Person {
-    public String name;
-    public int age;
-    public char gender;
+    private String name;
+    private int age;
+    private int gender;
 
     public Person() {
         name = "";
         age = 0;
-        gender = ' ';
+        gender = 0;
     }
 
     public Person(String name, int age, char gender) {
@@ -23,22 +23,25 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
-    public void setGender(char gender) {
+    public void setGender(int gender) {
         this.gender = gender;
     }
 
-    public String getName(String name) {
+    public String getName() {
         return name;
     }
-    public int getAge(int age) {
+    public int getAge() {
         return age;
     }
-    public char getGender(char gender) {
+    public int getGender() {
         return gender;
     }
 
     @Override
     public String toString(){
-        return "Ten: \t"+name+"\nTuoi: \t"+age+"\nGioi tinh: \t"+gender;
+        String gt;
+        if (gender==0) gt = "nu";
+        else gt = "nam";
+        return "Ten: \t"+name+"\nTuoi: \t"+age+"\nGioi tinh: \t"+gt;
     }
 }

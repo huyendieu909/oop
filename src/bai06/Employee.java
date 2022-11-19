@@ -2,9 +2,12 @@
 package bai06;
 
 public class Employee extends Person{
-    public String employerName;
-    public String dateHired;
- 
+    private String employerName;
+    private String dateHired;
+
+    public Employee(){
+    
+    }
     public Employee(String name,int age,char gender,String employerName,String dateHired){
         super(name,age,gender);
         this.employerName = employerName;
@@ -16,10 +19,10 @@ public class Employee extends Person{
     public void setDateHired(String dateHired){
         this.dateHired = dateHired;
     }
-    public String getEmployerName(String employerName){
+    public String getEmployerName(){
         return employerName;
     }
-    public String getDateHired(String dateHired){
+    public String getDateHired(){
         return dateHired;
     }
     @Override

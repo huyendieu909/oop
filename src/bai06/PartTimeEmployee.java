@@ -2,7 +2,10 @@
 package bai06;
 
 public class PartTimeEmployee extends Employee{
-    public int hoursPerWeek;
+    private int hoursPerWeek;
+    public PartTimeEmployee(){
+    
+    }
     public PartTimeEmployee(String name, int age, char gender, String employerName, String dateHired, int hoursPerWeek){
         super(name,age,gender,employerName,dateHired);
         this.hoursPerWeek = hoursPerWeek;
@@ -11,7 +14,7 @@ public class PartTimeEmployee extends Employee{
         this.hoursPerWeek = hoursPerWeek;
     }
     
-    public int getHoursPerWeek(int hoursPerWeek){
+    public int getHoursPerWeek(){
         return hoursPerWeek;
     }
     @Override
