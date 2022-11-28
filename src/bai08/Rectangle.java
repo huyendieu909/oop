@@ -1,21 +1,24 @@
 package bai08;
 public class Rectangle extends Shape{
-    public int length;
-    public int width;
-    public Rectangle(int length, int width){
+    private double length;
+    private double width;
+    public Rectangle(){
+        
+    }
+    public Rectangle(double length, double width){
         this.length = length;
         this.width = width;
     }
-    public void setLength(int length){
+    public void setLength(double length){
         this.length = length;
     }
-    public int getLength(int length){
+    public double getLength(){
         return length;
     }
-    public void setWidth(int width){
+    public void setWidth(double width){
         this.width = width;
     }
-    public int getWidth(int width){
+    public double getWidth(){
         return width;
     }
   
@@ -25,6 +28,6 @@ public class Rectangle extends Shape{
     }
     @Override
     public String toString(){
-        return "Dien tich hinh chu nhat la: "+getArea();
+        return "\nLoai: hinh chu nhat\n"+"Dien tich: "+getArea();
     }
 }
