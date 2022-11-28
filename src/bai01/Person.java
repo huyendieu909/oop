@@ -3,7 +3,7 @@ public class Person {
     public String name;
     public String dob;
     public String pob;
-    public char gender; //giởi tính nam là M, nữ là N
+    public String gender; //giởi tính nam là M, nữ là N
     public String email;
     public String phone;
 
@@ -11,12 +11,12 @@ public class Person {
         this.name = "";
         this.dob = "";
         this.pob = "";
-        this.gender = 'M';
+        this.gender = "";
         this.email = "";
         this.phone = "";
     }
 
-    public Person(String name, String dob, String pob, char gender, String email, String phone) {
+    public Person(String name, String dob, String pob, String gender, String email, String phone) {
         this.name = name;
         this.dob = dob;
         this.pob = pob;
@@ -34,7 +34,7 @@ public class Person {
     public void setPob(String pob) {
         this.pob = pob;
     }
-    public void setGender(char gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
     public void setEmail(String email) {
