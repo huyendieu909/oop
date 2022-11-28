@@ -1,23 +1,24 @@
-
 package bai09;
 public class Triangle extends Shape {
-    public int base;
-    public int height;
-    public Triangle(int base, int height, String color){
-        super(color);
+    private double base;
+    private double height;
+    public Triangle(){
+        
+    }
+    public Triangle(double base, double height){
         this.base = base;
         this.height = height;
     }
-    public void setBase(int base){
+    public void setBase(double base){
         this.base = base;
     }
-    public int getBase(int base){
+    public double getBase(){
         return base;
     }
-    public void setHeight(int height){
+    public void setHeight(double height){
         this.height = height;
     }
-    public int getHeight(int height){
+    public double getHeight(){
         return height;
     }
   
@@ -27,6 +28,6 @@ public class Triangle extends Shape {
     }
     @Override
     public String toString(){
-        return super.toString()+"\nDien tich tam giac la: "+getArea();
+        return "\nLoai: hinh tam giac\n"+"Dien tich: "+getArea();
     }
 }

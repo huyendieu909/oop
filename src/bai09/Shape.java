@@ -1,6 +1,6 @@
 package bai09;
 public abstract class Shape {
-    public String color;
+    private String color;
     public Shape(){
         color = "";
     }
@@ -10,12 +10,12 @@ public abstract class Shape {
     public void setColor(String color){
         this.color = color;
     }
-    public String getColor(String color){
+    public String getColor(){
         return color;
     }
     public abstract double getArea();
     @Override
     public String toString(){
-        return "Mau: \t"+color;
+        return "Mau: \t";
     }
 }
