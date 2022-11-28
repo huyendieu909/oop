@@ -1,22 +1,37 @@
 package bai14;
 import java.text.DecimalFormat;
-
 public class CNKSP extends CongNhan {
-    public int sosanpham;
-    public double dongia;
-    public double thuong;
+    private int sosanpham;
+    private double dongia;
+    private double thuong;
+    public CNKSP(){
+        
+    }
     public CNKSP(String hoten,String diachi,String ngaysinh,String loaicn,int sosanpham,double dongia,double thuong){
         super(hoten,diachi,ngaysinh,loaicn);
         this.sosanpham = sosanpham;
         this.dongia = dongia;
         this.thuong = thuong;
     }
+    
+    
+    public void setSoSanPham(int sosanpham){
+        this.sosanpham = sosanpham;
+    }
+    
+    public void setDonGia(double dongia){
+        this.dongia = dongia;
+    }
+    
+    public void setThuongSp(double thuong){
+        this.thuong = thuong;
+    }
 
     public void nhapThongTin(String hoten,String diachi,String ngaysinh,String loaicn,int sosanpham,double dongia,double thuong){
-        this.hoten = hoten;
+        /*this.hoten = hoten;
         this.diachi = diachi;
         this.ngaysinh = ngaysinh;
-        this.loaicn = loaicn;
+        this.loaicn = loaicn;*/
         this.sosanpham = sosanpham;
         this.dongia = dongia;
         this.thuong = thuong;
@@ -32,6 +47,6 @@ public class CNKSP extends CongNhan {
     @Override
     public String inThongTin(){
         DecimalFormat df = new DecimalFormat("0.00");
-        return super.inThongTin()+"\nLoai cong nhan: "+loaicn+"\nLuong thang: \t"+df.format(tinhLuong());
+        return super.inThongTin()+"\nLoai cong nhan: "+"Khoan san pham"+"\nLuong thang: \t"+df.format(tinhLuong());
     }
 }
