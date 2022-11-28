@@ -8,11 +8,14 @@ public class Test {
         n = sc.nextInt();sc.nextLine();
         HocVien hv[] = new HocVien[n];
         for (int i = 0;i < n;i++){
-            System.out.print("Nhap loai hoc vien (do hoa thi nhap 1, lap trinh thi nhap 2): ");
+            int loai;
+            do {
+                System.out.print("Nhap loai hoc vien (do hoa thi nhap 1, lap trinh thi nhap 2): ");
+                loai = sc.nextInt();sc.nextLine();
+            } while (loai!=1&&loai!=2);
             // đồ họa thì nhập 1, lập trình thì nhập 2
-            int x = sc.nextInt();sc.nextLine();
             //tùy vào loại sinh viên mà khởi tạo cho các trường họp
-            switch (x){
+            switch (loai){
                 case 1:
                     hv[i] = new HocVienDH();
                     break;
@@ -30,14 +33,14 @@ public class Test {
             hv[i].setLoaiUt(sc.nextInt());sc.nextLine();
             System.out.print("\tNhap chuong trinh: ");
             hv[i].setLoaiCt(sc.nextLine());
-            if (x == 1){
+            if (loai == 1){
                 hv[i] = (HocVienDH) hv[i];
                 System.out.print("\tNhap so buoi da hoc: ");
                 hv[i].setSoBuoiHoc(sc.nextInt());sc.nextLine();
                 System.out.print("\tNhap don gia: ");
                 hv[i].setDonGia(sc.nextInt());sc.nextLine();
             }
-            if (x == 2){
+            if (loai == 2){
                 hv[i] = (HocVienLT) hv[i];
                 System.out.print("\tNhap so buoi da hoc: ");
                 hv[i].setSoBuoiHoc(sc.nextInt());sc.nextLine();

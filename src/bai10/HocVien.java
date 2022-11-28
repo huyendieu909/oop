@@ -1,8 +1,8 @@
 package bai10;
 public abstract class HocVien {
-    public String hoten;
-    public String diachi;
-    public String loaict; // loại chương trình
+    private String hoten;
+    private String diachi;
+    private String loaict; // loại chương trình
     public int loaiut; // loại ưu tiên gồm 2 loại 1 và 2
     public HocVien(){
         

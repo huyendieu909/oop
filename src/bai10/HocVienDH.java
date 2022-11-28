@@ -1,7 +1,7 @@
 package bai10;
 public class HocVienDH extends HocVien {
-    public int dongiadh;
-    public int sobuoihoc;
+    private int dongiadh;
+    private int sobuoihoc;
     public HocVienDH(){
         
     }
