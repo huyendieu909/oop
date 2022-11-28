@@ -1,9 +1,9 @@
 package bai12;
 public abstract class Nguoi {
-    public String hoten;
-    public String ngaysinh;
-    public String diachi;
-    public String loaisv;
+    private String hoten;
+    private String ngaysinh;
+    private String diachi;
+    private String loaisv;
     
     public Nguoi() {
         this.hoten = "";
@@ -34,19 +34,19 @@ public abstract class Nguoi {
     public void setLoaiSv(String loaisv){
         this.loaisv = loaisv;
     }
-    public String getHoTen(String hoten) {
+    public String getHoTen() {
         return hoten;
     }
 
-    public String getDiaChi(String diachi) {
+    public String getDiaChi() {
         return diachi;
     }
 
-    public String getNgaySinh(String ngaysinh) {
+    public String getNgaySinh() {
         return ngaysinh;
     }
     
-    public String getLoaiSv(String loaisv){
+    public String getLoaiSv(){
         return loaisv;
     }
     public void nhapThongTin(String hoten,String ngaysinh,String diachi,String loaisv){
@@ -58,6 +58,6 @@ public abstract class Nguoi {
     public abstract double tinhDiem();
 
     public String inThongTin() {
-        return "Ho ten: \t" + this.hoten + "\nDia chi: \t" + this.diachi + "\nNgay sinh: \t" + this.ngaysinh+"\nLoai sinh vien: \t"+loaisv;
+        return "Ho ten: \t" + this.hoten + "\nDia chi: \t" + this.diachi + "\nNgay sinh: \t" + this.ngaysinh+"\nLoai sinh vien: \t";
     }
 }
