@@ -4,15 +4,15 @@ public class NhanVien {
     public String name;
     public DiaChi address;
     public String dob;
-    public char gender;
+    public String gender;
 
     public NhanVien() {
         this.name = "";
         this.dob = "";
-        this.gender = (char)32;
+        this.gender = "";
     }
 
-    public NhanVien(String name, DiaChi address, String dob, char gender) {
+    public NhanVien(String name, DiaChi address, String dob, String gender) {
         this.name = name;
         this.address = address;
         this.dob = dob;
@@ -27,27 +27,27 @@ public class NhanVien {
         this.address = address;
     }
 
-    public void setdob(String dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
-    public void setGender(char gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
-    public String getName(String name) {
+    public String getName() {
         return name;
     }
 
-    public DiaChi getAddress(DiaChi address) {
+    public DiaChi getAddress() {
         return address;
     }
 
-    public String getDob(String dob) {
+    public String getDob() {
         return dob;
     }
 
-    public char getGender(char gender) {
+    public String getGender() {
         return gender;
     }
     @Override
