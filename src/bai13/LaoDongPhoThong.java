@@ -1,24 +1,25 @@
 package bai13;
-
 import java.text.DecimalFormat;
-
 public class LaoDongPhoThong extends NguoiLaoDong {
-    public int songaycong;
-    public double dongia;
-    public double thuong;
+    private int songaycong;
+    private double dongia;
+    private double thuong;
+    public LaoDongPhoThong(){
+        
+    }
     public LaoDongPhoThong(String hoten,String diachi,String loaild,int songaycong,double dongia,double thuong){
         super(hoten,diachi,loaild);
         this.songaycong = songaycong;
         this.dongia = dongia;
         this.thuong = thuong;
     }
-
-    public void nhapThongTin(String hoten,String diachi,String loaild,int songaycong,double dongia,double thuong){
-        this.hoten = hoten;
-        this.diachi = diachi;
-        this.loaild = loaild;
+    public void setSoNgayCong(int songaycong){
         this.songaycong = songaycong;
+    }
+    public void setDonGia(double dongia){
         this.dongia = dongia;
+    }
+    public void setThuong(double thuong){
         this.thuong = thuong;
     }
     
@@ -32,6 +33,6 @@ public class LaoDongPhoThong extends NguoiLaoDong {
     @Override
     public String inThongTin(){
         DecimalFormat df = new DecimalFormat("0.00");
-        return super.inThongTin()+"\nLoai lao dong: \t"+loaild+"\nLuong thang: \t"+df.format(tinhLuong());
+        return super.inThongTin()+"\nLoai lao dong: \t"+"lao dong pho thong"+"\nLuong thang: \t"+df.format(tinhLuong());
     }
 }

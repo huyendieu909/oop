@@ -3,10 +3,13 @@ package bai13;
 import java.text.DecimalFormat;
 
 public class KiSu extends NguoiLaoDong {
-    public double luongcoban;
-    public double hesoluong;
-    public double thuong;
-    public int songaycong;
+    private double luongcoban;
+    private double hesoluong;
+    private double thuong;
+    private int songaycong;
+    public KiSu(){
+        
+    }
     public KiSu(String hoten,String diachi,String loaild,double luongcoban,double hesoluong,double thuong,int songaycong){
         super(hoten,diachi,loaild);
         this.luongcoban = luongcoban;
@@ -14,13 +17,17 @@ public class KiSu extends NguoiLaoDong {
         this.thuong = thuong;
         this.songaycong = songaycong;
     }
-    public void nhapThongTin(String hoten,String diachi,String loaild,double luongcoban,double hesoluong,double thuong,int songaycong){
-        this.hoten = hoten;
-        this.diachi = diachi;
-        this.loaild = loaild;
+    
+    public void setLuongCoBan(double luongcoban){
         this.luongcoban = luongcoban;
+    }
+    public void setHeSoLuong(double hesoluong){
         this.hesoluong = hesoluong;
+    }
+    public void setThuong(double thuong){
         this.thuong = thuong;
+    }
+    public void setSoNgayCong(int songaycong){
         this.songaycong = songaycong;
     }
     
@@ -34,6 +41,6 @@ public class KiSu extends NguoiLaoDong {
     @Override
     public String inThongTin(){
         DecimalFormat df = new DecimalFormat("0.00");
-        return super.inThongTin()+"\nLoai lao dong: \t"+loaild+"\nLuong thang: \t"+df.format(tinhLuong());
+        return super.inThongTin()+"\nLoai lao dong: \t"+"ki su"+"\nLuong thang: \t"+df.format(tinhLuong());
     }
 }
