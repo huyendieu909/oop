@@ -16,7 +16,7 @@ public class test {
                     in("\tEnter information of 3 cars: \n");
                     for (int i=0;i<1;i++){
                         car[i] = new Car();
-                        in("Enter inf of the car no. "+(i+1)+": \n");
+                        in("Enter infỏmation of the car no. "+(i+1)+": \n");
                         in("Enter maker: ");
                         car[i].setMaker(sc.nextLine());
                         in("Enter model: ");
