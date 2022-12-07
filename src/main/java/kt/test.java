@@ -52,6 +52,15 @@ public class test {
                     in("display done!\n");
                     break;
                 }
+                case 4 -> {
+                    String s;
+                    in("Enter model you want to search: ");
+                    s = sc.nextLine();
+                    in("Result: ");
+                    for (int i=0;i<3;i++){
+                        
+                    }
+                }
                 default -> {
                     in("Wrong input!\n");
                 }
