@@ -1,7 +1,8 @@
 package kt;
-public class Vehicles {
-    private String maker;
-    private String model;
+import java.util.*;
+public class Vehicles implements Vehicle {
+    Scanner sc = new Scanner(System.in);
+    private String maker,model;
     private double price;
     public Vehicles(){
         
@@ -28,5 +29,18 @@ public class Vehicles {
     }
     public double getPrice(){
         return price;
+    }
+    @Override 
+    public void display(){
+        System.out.print("Maker: "+this.getMaker()+"\nModel: "+this.getModel()+"\nPrice: "+this.getPrice());
+    }
+    @Override
+    public void input(){
+        in("Enter maker: ");this.setMaker(sc.nextLine());
+        in("Enter model: ");this.setModel(sc.nextLine());
+        in("Enter price: ");this.setPrice(sc.nextDouble());sc.nextLine();
+    }
+    static void in(String s){
+        System.out.print(s);
     }
 }

@@ -1,5 +1,4 @@
 package kt;
-import java.util.*;
 public class Car extends Vehicles implements Vehicle{
     private String color;
     public Car(){
@@ -17,17 +16,14 @@ public class Car extends Vehicles implements Vehicle{
     }
     @Override
     public void input(){
-        Scanner sc = new Scanner(System.in);
-        in("Enter color: ");
-        this.color = sc.nextLine();
+        super.input();
+        in("Enter color: ");this.color = sc.nextLine();
     }
     
     @Override
     public void display(){
-        in("Maker: "+getMaker()+"\n");
-        in("Model: "+getModel()+"\n");
-        in("Price: "+getPrice()+"\n");
-        in("Color: "+color+"\n");
+        super.display();
+        in("\nColor: "+this.getColor()+"\n");
     }
     
     static void in(String s){

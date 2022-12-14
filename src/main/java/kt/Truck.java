@@ -1,5 +1,4 @@
 package kt;
-import java.util.Scanner;
 public class Truck extends Vehicles implements Vehicle{
     private int truckload;
     public Truck(){
@@ -17,18 +16,15 @@ public class Truck extends Vehicles implements Vehicle{
     }
     @Override
     public void input(){
-        Scanner sc = new Scanner(System.in);
+        super.input();
         in("Enter truckload: ");
-        this.truckload = sc.nextInt();
-        sc.nextLine();
+        this.truckload = sc.nextInt();sc.nextLine();
     }
     
     @Override
     public void display(){
-        in("Maker: "+getMaker()+"\n");
-        in("Model: "+getModel()+"\n");
-        in("Price: "+getPrice()+"\n");
-        in("Truckload: "+this.truckload+"\n");
+        super.display();
+        in("\nTruckload: "+getTruckload()+"\n");
     }
     
     static void in(String s){
