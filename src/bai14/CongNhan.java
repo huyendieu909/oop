@@ -3,7 +3,7 @@ public abstract class CongNhan {
     private String hoten;
     private String diachi;
     private String ngaysinh;
-    private String loaicn; 
+    private String loaicn; //
     public CongNhan(){
         
     }
