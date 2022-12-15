@@ -24,6 +24,7 @@ public class Test {
                     break;
             }
         }
+        
         System.out.print("\n\tThong tin doi tuong thuoc lop Rectangle\n");
         for (int i = 0; i<n; i++){
             if (h[i] instanceof Rectangle){
