@@ -14,25 +14,13 @@ public class Test {
                 type = sc.nextInt();sc.nextLine();
             } while (type != 1 && type != 2);
             switch (type){
-                case 1:                  
-                    System.out.print("Nhap canh day hinh tam giac: ");
-                    double day = sc.nextDouble();sc.nextLine();
-                    System.out.print("Nhap chieu cao hinh tam giac: ");
-                    double cao = sc.nextDouble();sc.nextLine();
-                    h[i] = new Triangle(day,cao);
-                    System.out.print("Nhap mau sac: ");
-                    h[i].setColor(sc.nextLine()); 
+                case 1:
+                    h[i] = new Triangle();
+                    h[i].nhapThongTin();
                     break;
                 case 2: 
-                                       
-                    System.out.print("Nhap chieu dai hinh chu nhat: ");
-                    double dai = sc.nextDouble();sc.nextLine();
-                    System.out.print("Nhap chieu rong hinh chu nhat: ");
-                    double rong = sc.nextDouble();sc.nextLine();
-                    h[i] = new Rectangle(dai,rong);
-                    System.out.print("Nhap mau sac: ");
-                    String clr = sc.nextLine(); 
-                    h[i].setColor(clr);
+                    h[i] = new Rectangle();
+                    h[i].nhapThongTin();
                     break;
             }
         }
@@ -40,7 +28,6 @@ public class Test {
         for (int i = 0; i<n; i++){
             if (h[i] instanceof Rectangle){
                 System.out.print("Hinh thu "+(i+1)+"\n");
-                System.out.print("Mau sac: "+h[i].getColor());
                 System.out.println(h[i]);
             }
         }
